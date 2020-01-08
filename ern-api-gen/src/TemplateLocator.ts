@@ -15,3 +15,5 @@ export class TemplateLocator {
     )
   }
 }
+
+console.log('wee')

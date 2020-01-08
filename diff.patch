@@ -1,0 +1,47 @@
+diff --git a/ern-api-gen/src/InheritanceTreeSorter.ts b/ern-api-gen/src/InheritanceTreeSorter.ts
+index 15f0659c..f2effa27 100644
+--- a/ern-api-gen/src/InheritanceTreeSorter.ts
++++ b/ern-api-gen/src/InheritanceTreeSorter.ts
+@@ -9,6 +9,7 @@ export class InheritanceTreeSorter {
+   constructor(__parent, definitions) {
+     this.definitions = definitions
+     this.__parent = __parent
++    console.log('wee')
+   }
+ 
+   public compare(o1, o2) {
+diff --git a/ern-api-gen/src/InlineModelResolver.ts b/ern-api-gen/src/InlineModelResolver.ts
+index 35f45f9e..8a975ff8 100644
+--- a/ern-api-gen/src/InlineModelResolver.ts
++++ b/ern-api-gen/src/InlineModelResolver.ts
+@@ -18,6 +18,8 @@ function hasProperties(obj) {
+   return isNotEmptySet(obj.getProperties())
+ }
+ 
++console.log('wee')
++
+ export default class InlineModelResolver {
+   public addedModels = newHashMap()
+   public generatedSignature = newHashMap()
+diff --git a/ern-api-gen/src/TemplateLocator.ts b/ern-api-gen/src/TemplateLocator.ts
+index c9f65638..7cca399f 100644
+--- a/ern-api-gen/src/TemplateLocator.ts
++++ b/ern-api-gen/src/TemplateLocator.ts
+@@ -15,3 +15,5 @@ export class TemplateLocator {
+     )
+   }
+ }
++
++console.log('wee')
+diff --git a/ern-api-gen/src/languages/ERNMixin.ts b/ern-api-gen/src/languages/ERNMixin.ts
+index f4937a64..fb1bd162 100644
+--- a/ern-api-gen/src/languages/ERNMixin.ts
++++ b/ern-api-gen/src/languages/ERNMixin.ts
+@@ -4,6 +4,7 @@ import CliOption from '../CliOption'
+ export const BRDIGE_VERSION = 'bridgeVersion'
+ export default function mixit(clz, overide?: any) {
+   const { processOpts, fromOperation, initalizeCliOptions } = clz.prototype
++  console.log('wee')
+   Object.assign(
+     clz.prototype,
+     {

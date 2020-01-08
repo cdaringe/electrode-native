@@ -4,6 +4,7 @@ import CliOption from '../CliOption'
 export const BRDIGE_VERSION = 'bridgeVersion'
 export default function mixit(clz, overide?: any) {
   const { processOpts, fromOperation, initalizeCliOptions } = clz.prototype
+  console.log('wee')
   Object.assign(
     clz.prototype,
     {

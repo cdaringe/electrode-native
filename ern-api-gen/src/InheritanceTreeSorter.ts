@@ -9,6 +9,7 @@ export class InheritanceTreeSorter {
   constructor(__parent, definitions) {
     this.definitions = definitions
     this.__parent = __parent
+    console.log('wee')
   }
 
   public compare(o1, o2) {

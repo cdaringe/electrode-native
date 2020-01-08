@@ -18,6 +18,8 @@ function hasProperties(obj) {
   return isNotEmptySet(obj.getProperties())
 }
 
+console.log('wee')
+
 export default class InlineModelResolver {
   public addedModels = newHashMap()
   public generatedSignature = newHashMap()
